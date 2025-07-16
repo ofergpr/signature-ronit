@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>העתק חתימה</title>
+    <script>
+        function copySignature() {
+            const signatureElement = document.getElementById("signature");
+            const range = document.createRange();
+            range.selectNodeContents(signatureElement);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand("copy");
+            selection.removeAllRanges();
+            alert("החתימה הועתקה בהצלחה! כעת הדבק אותה בהגדרות המייל.");
+        }
+    </script>
+</head>
+
+<body
+    style="margin: 0; padding: 0; background-color: white !important; font-family: Arial, Helvetica, sans-serif !important;">
+
+    <div id="signature" style="background-color: white !important; padding: 10px;">
+        <table dir="rtl"
+            style="width: 100%; max-width: 600px; border-spacing: 0; background-color: white !important; font-family: Arial, Helvetica, sans-serif !important;">
+            <tr>
+                <td
+                    style="padding: 10px; vertical-align: middle; text-align: center; background-color: white !important;">
+                    <img src="https://res.cloudinary.com/dgqlej47z/image/upload/v1740341580/oflyfpvclx4mirdxtuxg.jpg"
+                        alt="רונית כחולי - לוגו" style="width: 100px;">
+                </td>
+                <td style="width: 1px; border-right: 1px solid #5a9fb5;"></td> <!-- קו הפרדה כחול -->
+                <td
+                    style="padding: 10px 20px; vertical-align: top; text-align: right; line-height: 1.5; font-size: 12px; background-color: white !important;">
+                    <font face="Arial, Helvetica, sans-serif">
+                        <b>
+                            <font color="#005670">רונית כחולי</font>
+                        </b><br>
+                        <font color="#005670">מרפאה בעיסוק בהתפתחות B.O.T והידרותרפיה מוסמכת</font><br>
+                        <font color="#005670">
+                            <span style="white-space: nowrap;">054-227-1179</span> | מס' רישוי: <span
+                                style="white-space: nowrap;">14108581</span>
+                        </font>
+                    </font>
+                    <div style="margin-top: 10px; text-align: right;">
+                        <a href="https://www.facebook.com/p/%D7%A8%D7%95%D7%A0%D7%99%D7%AA-%D7%9B%D7%97%D7%95%D7%9C%D7%99-%D7%A8%D7%99%D7%A4%D7%95%D7%99-%D7%91%D7%A2%D7%99%D7%A1%D7%95%D7%A7-%D7%94%D7%99%D7%93%D7%A8%D7%95%D7%AA%D7%A8%D7%A4%D7%99%D7%94-100063762183783/"
+                            target="_blank" style="text-decoration: none; margin-left: 10px;">
+                            <img src="https://res.cloudinary.com/dgqlej47z/image/upload/v1740341231/gtla9rpwchyldob0ihuk.png"
+                                alt="Facebook" style="width: 18px; height: 18px; vertical-align: middle;">
+                        </a>
+                        <a href="https://www.instagram.com/ronit.kaholi/" target="_blank"
+                            style="text-decoration: none; margin-left: 10px;">
+                            <img src="https://res.cloudinary.com/dgqlej47z/image/upload/f_auto,q_auto/zumdqgjg5mycsclreqs7"
+                                alt="Instagram" style="width: 18px; height: 18px; vertical-align: middle;">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <button onclick="copySignature()"
+        style="margin-top: 20px; padding: 10px 20px; background-color: #5a9fb5; color: white; border: none; cursor: pointer;">
+        העתק חתימה
+    </button>
+
+</body>
+
+</html>
